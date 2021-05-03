@@ -1,65 +1,28 @@
-UEditor extension for laravel-admin
-======
+<h1 align="center"> yilianyun-openapi-sdk </h1>
 
-这是一个 `laravel-admin` 扩展，用来将 [UEditor](https://ueditor.baidu.com/website/index.html) 集成进 `laravel-admin` 的表单中，~~依赖 [overtrue/laravel-ueditor](https://github.com/overtrue/laravel-ueditor)~~ 依赖 [codingyu/laravel-ueditor](https://github.com/codingyu/laravel-ueditor)
+<p align="center"> this is yilianyun for laravel.</p>
 
-## 安装
 
-```bash
-composer require cherrynechou/laravel-admin-ueditor
+## Installing
+
+```shell
+$ composer require cherrynechou/yilianyun-openapi-sdk -vvv
 ```
 
-发布资源
-```bash
-// V3.*
-php artisan vendor:publish --provider='CherryneChou\LaravelUEditor\UEditorServiceProvider'
+## Usage
 
-```
+TODO
 
-## 配置
+## Contributing
 
-在`config/admin.php`文件的`extensions`，加上属于这个扩展的一些配置
-```php
+You can contribute in one of three ways:
 
-    'extensions' => [
+1. File bug reports using the [issue tracker](https://github.com/cherrynechou/yilianyun-openapi-sdk/issues).
+2. Answer questions or fix bugs on the [issue tracker](https://github.com/cherrynechou/yilianyun-openapi-sdk/issues).
+3. Contribute new features or update the wiki.
 
-        'ueditor' => [
+_The code contribution process is not very formal. You just need to make sure that you follow the PSR-0, PSR-1, and PSR-2 coding guidelines. Any new code contributions must be accompanied by unit tests where applicable._
 
-            // 如果要关掉这个扩展，设置为false
-            'enable' => true,
+## License
 
-            // 编辑器的前端配置 参考：http://fex.baidu.com/ueditor/#start-config
-            'config' => [
-                'initialFrameHeight' => 400, // 例如初始化高度
-            ],
-            // 'field_type' => '自定义名字'
-        ]
-    ]
-
-```
-
-后端配置 `config/ueditor.php`，参考 ~~[overtrue/laravel-ueditor](https://github.com/overtrue/laravel-ueditor)~~ [codingyu/laravel-ueditor](https://github.com/codingyu/laravel-ueditor)
-
-## 使用
-
-### 2.* | 3.*
-组件名可配置，默认 `UEditor`
-
-
-在form表单中使用它：
-```php
-$form->UEditor('content');
-// options 中参数会覆盖 extensions.ueditor.config 中参数
-$form->UEditor('content')->options(['initialFrameHeight' => 800]);
-
-// 如果 extensions.ueditor.field_type 定义为 xxxEditor
-// $form->xxxEditor('content');
-```
-
-## 大感谢
-- [laravel-admin](https://github.com/z-song/laravel-admin)
-- [overtrue/laravel-ueditor](https://github.com/overtrue/laravel-ueditor)
-
-License
-------------
-Licensed under [The MIT License (MIT)](LICENSE).
+MIT
