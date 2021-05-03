@@ -1,6 +1,6 @@
 {
     "name": "cherrynechou\/yilianyun-openapi-sdk",
-    "description": "this is yilianyun for laravel",
+    "description": "this is yilianyun-sdk for laravel",
     "license": "MIT",
     "authors": [{
         "name": "CherryneChou",
@@ -8,6 +8,20 @@
     }],
     "require": {
         "php": ">=7.2",
+        "pimple/pimple": "^3.0",
+        "ext-simplexml": "*",
+        "ramsey/uuid": "^4.0",
+        "psr/simple-cache": "^1.0",
+        "symfony/cache": "^3.3 || ^4.3 || ^5.0",
+        "guzzlehttp/guzzle": "^6.2 || ^7.0"
     },
-    "minimum-stability": "dev"
+    "autoload": {
+        "psr-4": {
+            "CherryneChou\\EasyYilianYun\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "minimum-stability": "stable"
 }
