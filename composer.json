@@ -1,0 +1,13 @@
+{
+    "name": "cherrynechou\/yilianyun-openapi-sdk",
+    "description": "this is yilianyun for laravel",
+    "license": "MIT",
+    "authors": [{
+        "name": "CherryneChou",
+        "email": "iboy_2008@163.com"
+    }],
+    "require": {
+        "php": ">=7.2",
+    },
+    "minimum-stability": "dev"
+}
