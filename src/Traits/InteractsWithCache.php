@@ -5,7 +5,7 @@
  * Date: 2020/9/26 0026
  * Time: 14:49
  */
-namespace CherryneChou\EasyYilianYun\Kernel\Traits;
+namespace CherryneChou\EasyYilianYun\Traits;
 
 use CherryneChou\EasyYilianYun\Kernel\Exceptions\InvalidArgumentException;
 use Psr\Cache\CacheItemPoolInterface;

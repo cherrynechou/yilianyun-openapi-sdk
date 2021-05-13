@@ -5,7 +5,7 @@
  * Date: 2020/9/26 0026
  * Time: 9:47
  */
-namespace CherryneChou\EasyYilianYun\Kernel\Traits;
+namespace CherryneChou\EasyYilianYun\Traits;
 
 use CherryneChou\EasyYilianYun\Kernel\Contracts\Arrayable;
 use CherryneChou\EasyYilianYun\Kernel\Exceptions\InvalidArgumentException;

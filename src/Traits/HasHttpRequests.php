@@ -5,7 +5,7 @@
  * Date: 2020/9/26 0026
  * Time: 10:31
  */
-namespace CherryneChou\EasyYilianYun\Kernel\Traits;
+namespace CherryneChou\EasyYilianYun\Traits;
 
 use GuzzleHttp\Client as HttpClient;
 use GuzzleHttp\HandlerStack;

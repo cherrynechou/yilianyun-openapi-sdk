@@ -4,6 +4,10 @@ namespace CherryneChou\EasyYilianYun\AccessToken;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 
+/**
+ * Class ServiceProvider
+ * @package CherryneChou\EasyYilianYun\AccessToken
+ */
 class AccessTokenServiceProvider implements ServiceProviderInterface
 {
 	public function register(Container $pimple)

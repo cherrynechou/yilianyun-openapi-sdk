@@ -9,6 +9,10 @@ namespace CherryneChou\EasyYilianYun\AccessToken;
 
 use Ramsey\Uuid\Uuid;
 
+/**
+ * Class AccessToken
+ * @package CherryneChou\EasyYilianYun\AccessToken
+ */
 class AccessToken
 {
 	/**
