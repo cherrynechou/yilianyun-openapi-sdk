@@ -8,6 +8,7 @@
 namespace CherryneChou\EasyYilianYun\AccessToken;
 
 use Ramsey\Uuid\Uuid;
+use CherryneChou\EasyYilianYun\Application;
 
 /**
  * Class AccessToken

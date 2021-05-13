@@ -8,7 +8,7 @@ use Pimple\ServiceProviderInterface;
  * Class ServiceProvider
  * @package CherryneChou\EasyYilianYun\AccessToken
  */
-class AccessTokenServiceProvider implements ServiceProviderInterface
+class ServiceProvider implements ServiceProviderInterface
 {
 	public function register(Container $pimple)
     {
