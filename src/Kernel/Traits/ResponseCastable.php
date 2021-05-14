@@ -5,7 +5,7 @@
  * Date: 2020/9/26 0026
  * Time: 9:47
  */
-namespace CherryneChou\EasyYilianYun\Traits;
+namespace CherryneChou\EasyYilianYun\Kernel\Traits;
 
 use CherryneChou\EasyYilianYun\Kernel\Contracts\Arrayable;
 use CherryneChou\EasyYilianYun\Kernel\Exceptions\InvalidArgumentException;
@@ -23,6 +23,7 @@ trait ResponseCastable
     protected function castResponseToType(ResponseInterface $response, $type = null)
     {
         $response = Response::buildFromPsrResponse($response);
+
         $response->getBody()->rewind();
 
         switch ($type ?? 'array') {

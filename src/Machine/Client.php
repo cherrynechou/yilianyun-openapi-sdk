@@ -7,7 +7,7 @@
  */
 namespace CherryneChou\EasyYilianYun\Machine;
 
-use CherryneChou\EasyYilianYun\Kernel\Http\Client as BaseClient;
+use CherryneChou\EasyYilianYun\BaseClient;
 
 /**
  * Class Client

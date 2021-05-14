@@ -7,6 +7,12 @@
  */
 namespace CherryneChou\EasyYilianYun\AccessToken;
 
+use CherryneChou\EasyYilianYun\Auth\Client;
+use CherryneChou\EasyYilianYun\Kernel\Exceptions\InvalidCredentialsException;
+use CherryneChou\EasyYilianYun\Kernel\Support\Arr;
+use CherryneChou\EasyYilianYun\Kernel\Traits\HasSign;
+use CherryneChou\EasyYilianYun\Kernel\Traits\InteractsWithCache;
+use CherryneChou\EasyYilianYun\Kernel\Traits\ResponseCastable;
 use Ramsey\Uuid\Uuid;
 use CherryneChou\EasyYilianYun\Application;
 
@@ -16,6 +22,18 @@ use CherryneChou\EasyYilianYun\Application;
  */
 class AccessToken
 {
+    use InteractsWithCache, ResponseCastable, HasSign;
+
+    /**
+     * @var Application
+     */
+    protected $app;
+
+    /**
+     * @var int
+     */
+    protected $refreshExpired=35;     //刷新AccessToken凭证 失效时间35天
+
 	/**
      * AccessToken constructor.
      * @param Application $app
@@ -26,9 +44,7 @@ class AccessToken
     }
 
     /**
-     * 获取access_token
      * @return mixed
-     * @throws Exceptions\InvalidConfigException
      * @throws \CherryneChou\EasyYilianYun\Kernel\Exceptions\InvalidArgumentException
      * @throws \Psr\SimpleCache\InvalidArgumentException
      */
@@ -48,7 +64,6 @@ class AccessToken
 
     /**
      * @return mixed
-     * @throws Exceptions\InvalidConfigException
      */
     protected function getToken()
     {
@@ -68,7 +83,6 @@ class AccessToken
     /**
      * @param $refreshToken
      * @return mixed
-     * @throws Exceptions\InvalidConfigException
      */
     protected function refreshToken($refreshToken)
     {
@@ -87,11 +101,11 @@ class AccessToken
     }
 
     /**
-     * access_token 30天
-     * refresh_token 35天
      * @param $params
-     * @return mixed
-     * @throws Exceptions\InvalidConfigException
+     * @return \Illuminate\Support\HigherOrderTapProxy|mixed
+     * @throws \CherryneChou\EasyYilianYun\Kernel\Exceptions\InvalidArgumentException
+     * @throws \CherryneChou\EasyYilianYun\Kernel\Exceptions\InvalidConfigException
+     * @throws \Psr\SimpleCache\InvalidArgumentException
      */
     public function send($params)
     {

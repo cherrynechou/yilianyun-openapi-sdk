@@ -6,7 +6,7 @@
  * Time: 15:53
  */
 
-namespace CherryneChou\EasyYilianYun\Traits;
+namespace CherryneChou\EasyYilianYun\Kernel\Traits;
 
 /**
  * Trait HasSign

@@ -8,7 +8,6 @@
 
 namespace CherryneChou\EasyYilianYun\Picture;
 
-
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 

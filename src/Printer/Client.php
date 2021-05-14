@@ -6,8 +6,8 @@
  * Time: 17:22
  */
 namespace CherryneChou\EasyYilianYun\Printer;
-use CherryneChou\EasyYilianYun\Kernel\Http\Client as BaseClient;
 
+use CherryneChou\EasyYilianYun\BaseClient;
 
 /**
  * Class Client
@@ -15,12 +15,6 @@ use CherryneChou\EasyYilianYun\Kernel\Http\Client as BaseClient;
  */
 class Client extends BaseClient
 {
-    
-    public function addPrinter($machine_code, $msign, $print_name = '', $phone = '')
-    {
-        return $this->post('/printer/addprinter', compact('machine_code', 'msign', 'print_name', 'phone'));
-    }
-
     /**
      * @param $machineCode
      * @param $content

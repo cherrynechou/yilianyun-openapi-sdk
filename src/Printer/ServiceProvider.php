@@ -7,7 +7,7 @@
  */
 namespace CherryneChou\EasyYilianYun\Printer;
 
-
+use CherryneChou\EasyYilianYun\BaseClient;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 

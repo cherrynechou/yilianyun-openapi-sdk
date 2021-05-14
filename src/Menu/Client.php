@@ -7,7 +7,8 @@
  */
 
 namespace CherryneChou\EasyYilianYun\Menu;
-use CherryneChou\EasyYilianYun\Kernel\Http\Client as BaseClient;
+
+use CherryneChou\EasyYilianYun\BaseClient;
 
 class Client extends BaseClient
 {
