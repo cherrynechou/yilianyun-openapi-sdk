@@ -9,7 +9,7 @@ namespace CherryneChou\EasyYilianYun\Auth;
 
 use CherryneChou\EasyYilianYun\Application;
 use CherryneChou\EasyYilianYun\Kernel\Http\Client as BaseClient;
-use CherryneChou\EasyYilianYun\Traits\Traits\HasHttpRequests;
+use CherryneChou\EasyYilianYun\Kernel\Traits\HasHttpRequests;
 
 /**
  * Class Client

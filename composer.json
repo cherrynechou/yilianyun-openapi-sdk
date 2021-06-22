@@ -7,7 +7,7 @@
         "email": "iboy_2008@163.com"
     }],
     "require": {
-        "php": ">=7.2",
+        "php": ">=7.2|^8.0",
         "pimple/pimple": "^3.0",
         "ext-simplexml": "*",
         "ramsey/uuid": "^4.0",
